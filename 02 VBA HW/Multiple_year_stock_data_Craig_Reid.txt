@@ -1,0 +1,164 @@
+Sub volume_tabluator()
+
+For Each ws In Worksheets
+
+'Determine the last row
+Dim lastRow As Long
+    
+    lastRow = ws.Cells(Rows.Count, 1).End(xlUp).Row
+    
+    
+'For loop + conditional to add volume for each stock &
+' summarize results
+
+  ' Set an initial variable for holding the stock name
+  Dim stockname As String
+
+  ' Set an initial variable for holding the total volume per stock
+  Dim stockvolume As Double
+  stockvolume = 0
+
+  ' Keep track of the location for stock in the summary table
+  Dim Summary_Table_Row As Integer
+  Summary_Table_Row = 2
+  Dim rowcount As Long
+  
+  ' Set a variable to hold opening value
+  Dim openvalue As Double
+  
+  'Set a variable to hold the closing value
+  Dim closevalue As Double
+  
+  'Set a variable to hold change in stock value
+  Dim deltavalue As Double
+  Dim deltapercent As Double
+  
+  
+  ' Name the summary table
+  ws.Columns("I:L").AutoFit
+  ws.Cells(1, 9).Value = "Ticker"
+  ws.Cells(1, 10).Value = "Yearly Change"
+  ws.Cells(1, 11).Value = "Percent Change"
+  ws.Cells(1, 12).Value = "Total Stock Volume"
+
+  ' Loop through all stocks on the sheet
+  For i = 2 To lastRow
+
+    ' Check if we are still within the same stock, if it is not...
+    If ws.Cells(i + 1, 1).Value <> ws.Cells(i, 1).Value Then
+
+      ' Set the stock name
+      stockname = ws.Cells(i, 1).Value
+
+      ' Add to the Stockvolume Total
+      stockvolume = stockvolume + ws.Cells(i, 7).Value
+      
+      'Calculate changes in value
+      openvalue = ws.Cells(i - rowcount, 3).Value
+      closevalue = ws.Cells(i, 6).Value
+      deltavalue = closevalue - openvalue
+      
+      'Check for zero in denominator
+      If openvalue <> 0 Then
+            deltapercent = deltavalue / openvalue
+         Else
+            deltapercent = 0
+      End If
+
+      ' Print the Stock Name in the Summary Table
+      ws.Range("I" & Summary_Table_Row).Value = stockname
+     
+      'Print the change in Value in the Summary Table
+      If deltavalue > 0 Then
+            ws.Range("J" & Summary_Table_Row).Interior.ColorIndex = 4
+            ws.Range("J" & Summary_Table_Row).Value = deltavalue
+        Else
+            ws.Range("J" & Summary_Table_Row).Interior.ColorIndex = 3
+            ws.Range("J" & Summary_Table_Row).Value = deltavalue
+        End If
+      
+      'Print the chane in % in the Summary Table
+      ws.Range("K" & Summary_Table_Row).Value = Format(deltapercent, "Percent")
+
+      ' Print the Stockvolume Amount to the Summary Table
+      ws.Range("L" & Summary_Table_Row).Value = stockvolume
+
+      ' Add one to the summary table row
+      Summary_Table_Row = Summary_Table_Row + 1
+      
+      ' Reset the calculated values
+      stockvolume = 0
+      openvalue = 0
+      closevalue = 0
+      rowcount = 0
+
+    ' If the cell immediately following a row is the same brand...
+    Else
+
+      ' Add to the Brand Total
+      stockvolume = stockvolume + ws.Cells(i, 7).Value
+      
+      ' Store opening value for smallest date value
+      rowcount = rowcount + 1
+
+    End If
+
+  Next i
+  
+'Compare values of the summary to find highest and lowest
+
+'First print the headers and row labels
+  ws.Columns("K:P").AutoFit
+  ws.Cells(1, 15).Value = "Ticker"
+  ws.Cells(1, 16).Value = "Value"
+  ws.Cells(2, 14).Value = "Greatest % Increase"
+  ws.Cells(3, 14).Value = "Greatest % Decrease"
+  Cells(4, 14).Value = "Greatest Total Volume"
+
+'Find the number of rows in the summary table
+    lastRow2 = ws.Cells(Rows.Count, 9).End(xlUp).Row
+    Dim biggestgain As Double
+        biggestgain = 0
+    Dim gainname As String
+    Dim biggestloss As Double
+    Dim lossname As String
+    Dim highestvolume As Double
+    Dim volumename As String
+        
+    For n = 2 To lastRow2
+        If ws.Cells(n, 11).Value > biggestgain Then
+            biggestgain = ws.Cells(n, 11).Value
+            gainname = ws.Cells(n, 9).Value
+            ws.Cells(2, 15) = gainname
+            ws.Cells(2, 16) = Format(biggestgain, "Percent")
+        End If
+    Next n
+       
+    For n = 2 To lastRow2
+        If ws.Cells(n, 11).Value < biggestloss Then
+            biggestloss = ws.Cells(n, 11).Value
+            lossname = ws.Cells(n, 9).Value
+            ws.Cells(3, 15) = lossname
+            ws.Cells(3, 16) = Format(biggestloss, "Percent")
+        End If
+    Next n
+  
+    For n = 2 To lastRow2
+        If ws.Cells(n, 12).Value > highestvolume Then
+            highestvolume = ws.Cells(n, 12).Value
+            volumename = ws.Cells(n, 9).Value
+            ws.Cells(4, 15).Value = volumename
+            ws.Cells(4, 16).Value = highestvolume
+        End If
+    Next n
+    
+      ws.Columns("A:P").AutoFit
+  
+Next ws
+  
+End Sub
+
+        
+
+
+

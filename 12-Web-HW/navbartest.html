@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- CSS Stylesheets with Relative Paths -->
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="navbarCSS.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="topnavL" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+    </div>
+    <div class="topnav" id="myTopnav">
+    <a href="#news">Data</a>
+    <a href="#contact">Comparison</a>
+    <div class="dropdown">
+        <button class="dropbtn">Dashboard
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        </div>
+    </div> 
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+<!-- Empty Row -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Row 2 -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <h1 class="pageHeaders">Summary: Global weather by Latitude</h1>
+        </div>
+        <div class="col-md-1">
+            <div class="box"></div>
+        </div>
+        <div class="col-md-4">
+            <h1 class="pageHeaders">Visualizations</h1>
+        </div>
+    </div>
+</div>
+
+<!-- Empty Row -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Row 3 -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <img src="Resources/assets/images/TemperatureVsLatitude.png" alt="TemperatureVsLatitude" class="img-thumbnail">
+        </div>
+        <div class="col-md-5">
+            <p>
+                The purpose of this project was to analyze how weather across
+                the world, changes as each location approaches the equator.
+                <br><br>
+                A large number of people worldwide assume that it gets hotter.
+                <br><br>
+                This analysis is set to confirm or debunk this old belief as 
+                well as to provide facts around what truly happens to the 
+                weather as we approach the equator
+                <br><br>
+            </p>
+        </div>
+        <div class="col-md-1">
+            <div class="box"></div>
+        </div>
+        <div class="col-md-2">
+            <a href="Viz01_TemperatureVsLatitude.html" title=""><img src="Resources/assets/images/TemperatureVsLatitude.png" alt="TemperatureVsLatitude" class="img-responsive"></a>
+            <!-- <img src="assets/images/TemperatureVsLatitude.png" alt="TemperatureVsLatitude" class="img-thumbnail"> -->
+        </div>
+        <div class="col-md-2">
+            <a href="Viz02_HumidityVsLatitude.html" title=""><img src="Resources/assets/images/HumidityVsLatitude.png" alt="HumidityVsLatitude" class="img-responsive"></a>
+            <!-- <img src="assets/images/HumidityVsLatitude.png" alt="HumidityVsLatitude" class="img-thumbnail"> -->
+        </div>
+    </div>
+</div>
+
+<!-- Row 4 -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <p>
+                <ul class="bulletList">
+                    <li>As we approach the equator, the temperature doesn't simply get hotter, it may appear that way if we approach the equator from a latitude experiencing winter time.</li>
+                    <li>Temperatures around the equator are pretty stable throughout the year, regardless of the elevation, because there aren't seasons in the equatorial latitudes.</li>
+                    <li>High and Low altitudes exposed to full seasons, reverse their high and low temperatures around every 6 months.</li>
+                </ul>
+            </p>
+        </div>
+        <div class="col-md-1">
+            <div class="box"></div>
+        </div>
+        <div class="col-md-2">
+            <a href="Viz03_CloudinessVsLatitude.html" title=""><img src="Resources/assets/images/CloudinessVsLatitude.png" alt="CloudinessVsLatitude" class="img-responsive"></a>
+            <!-- <img src="assets/images/CloudinessVsLatitude.png" alt="CloudinessVsLatitude" class="img-thumbnail"> -->
+        </div>
+        <div class="col-md-2">
+            <a href="Viz04_WindSpeedVsLatitude.html" title=""><img src="Resources/assets/images/WindspeedVsLatitude.png" alt="CloudinessVsLatitude" class="img-responsive"></a>
+            <img src="assets/images/WindSpeedVsLatitude.png" alt="WindSpeedVsLatitude" class="img-thumbnail">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

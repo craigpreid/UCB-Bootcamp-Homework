@@ -1,0 +1,116 @@
+/* set up the base for the body */
+body {
+  background: #dededf;
+}
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    font-family: Arial;
+    height: 70px;
+    margin: 0;
+    margin-top: 0%;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: right;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: #000000;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #37b8a6;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .navbox1{
+    /*first button on the nav bar*/
+    display: inline;
+    text-align: center;
+    position: relative;
+    margin-top: 0%;
+    /* top: -28%; */
+    padding: 20 px;
+    float: left;
+    /* bottom: 20 px; */
+    left: 10%;
+    width: 200px;
+    height: 70px;
+    /* padding-top: 5px; */
+    /* padding: 70px; */
+    background: #37b8a6;
+  }
+
+  h1 {
+    padding: 20px 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+/* Main Box on left side */
+.box_left {
+  width: 700px;
+  height: 400px;
+  background: #ffffff;
+  position: absolute;
+  top: 22%;
+  left: 3%;
+
+}

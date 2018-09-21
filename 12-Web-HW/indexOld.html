@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Temperature vs. Latitude</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootStyle.css">
+</head>
+<body>
+
+    <!-- Row 1 Navbar -->
+    <div class="container">
+        <!-- Normally these medium columns go full wide on small screen sizes -->
+        <div class="row navbar navRow">
+            <!-- <nav class="navbarx"> -->
+
+                <div class="col-md-2">
+                    <div class="boxSm skyblue centerTextAlignment"><!--Latitude-->
+                        <a href="index.html" class="boxSm skyblue">Latitude</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box"></div>
+                </div>
+                <div class="dropdown col-md-2">
+                    <button class="dropbtn">Dashboards</button>
+                        <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> <!-- Display/Label Here without brackets -->
+                    <div class="dropdown-content">
+                        <a href="Viz01_TemperatureVsLatitude.html">Temp vs. Latitude</a>
+                        <a href="Viz02_HumidityVsLatitude.html">Humidity vs. Latitude</a>
+                        <a href="Viz03_CloudinessVsLatitude.html">Cloudiness vs. Latitude</a>
+                        <a href="Viz04_WindSpeedVsLatitude.html">Wind vs. Latitude</a>
+                    </div>
+                <!-- </nav> -->
+            </div>
+            <div class="col-md-2">
+                <div class="box white centerTextAlignment"><!-- Comparissons -->
+                    <a href="Viz05_Comparisons.html" class=hyperkinkNoEffect>Comparison</a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box white centerTextAlignment"><!-- Data -->
+                    <a href="Viz06_Data.html" class=hyperkinkNoEffect>Data</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End Navbar -->
+
+    <!-- Empty Row -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1 class="pageHeaders">Summary: Latitude vs. X</h1>
+            </div>
+            <div class="col-md-1">
+                <div class="box"></div>
+            </div>
+            <div class="col-md-4">
+                <h1 class="pageHeaders">Visualizations</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Empty Row -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="Resources/assets/images/TemperatureVsLatitude.png" alt="TemperatureVsLatitude" class="img-thumbnail">
+            </div>
+            
+            <div class="col-md-5">
+                <p>
+                    The purpose of this project was to analyze how weather across
+                    the world, changes as each location approaches the equator.
+                    <br><br>
+                    A large number of people worldwide assume that it gets hotter.
+                    <br><br>
+                    This analysis is set to confirm or debunk this old belief as 
+                    well as to provide facts around what truly happens to the 
+                    weather as we approach the equator
+                    <br><br>
+                </p>
+            </div>
+            <div class="col-md-1">
+                <div class="box"></div>
+            </div>
+            <div class="col-md-2">
+                <a href="Viz01_TemperatureVsLatitude.html" title=""><img src="Resources/assets/images/TemperatureVsLatitude.png" alt="TemperatureVsLatitude" class="img-responsive"></a>
+                <!-- <img src="assets/images/TemperatureVsLatitude.png" alt="TemperatureVsLatitude" class="img-thumbnail"> -->
+            </div>
+            <div class="col-md-2">
+                <a href="Viz02_HumidityVsLatitude.html" title=""><img src="Resources/assets/images/HumidityVsLatitude.png" alt="HumidityVsLatitude" class="img-responsive"></a>
+                <!-- <img src="assets/images/HumidityVsLatitude.png" alt="HumidityVsLatitude" class="img-thumbnail"> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <p>
+                    <ul class="bulletList">
+                        <li>As we approach the equator, the temperature doesn't simply get hotter, it may appear that way if we approach the equator from a latitude experiencing winter time.</li>
+                        <li>Temperatures around the equator are pretty stable throughout the year, regardless of the elevation, because there aren't seasons in the equatorial latitudes.</li>
+                        <li>High and Low altitudes exposed to full seasons, reverse their high and low temperatures around every 6 months.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="col-md-1">
+                <div class="box"></div>
+            </div>
+            <div class="col-md-2">
+                <a href="Viz03_CloudinessVsLatitude.html" title=""><img src="Resources/assets/images/CloudinessVsLatitude.png" alt="CloudinessVsLatitude" class="img-responsive"></a>
+                <!-- <img src="assets/images/CloudinessVsLatitude.png" alt="CloudinessVsLatitude" class="img-thumbnail"> -->
+            </div>
+            <div class="col-md-2">
+                <a href="Viz04_WindSpeedVsLatitude.html" title=""><img src="Resources/assets/images/WindspeedVsLatitude.png" alt="CloudinessVsLatitude" class="img-responsive"></a>
+                <!-- <img src="assets/images/WindSpeedVsLatitude.png" alt="WindSpeedVsLatitude" class="img-thumbnail"> -->
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

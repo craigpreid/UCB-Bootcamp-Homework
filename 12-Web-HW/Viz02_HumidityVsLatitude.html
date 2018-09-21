@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Temperature vs. Latitude</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootStyle.css">
+</head>
+<body>
+
+    <!-- Row 1 Navbar -->
+    <div class="container">
+        <!-- Normally these medium columns go full wide on small screen sizes -->
+        <div class="row navbar navRow">
+            <!-- <nav class="navbarx"> -->
+
+                <div class="col-md-2">
+                    <div class="boxSm skyblue centerTextAlignment"><!--Latitude-->
+                        <a href="index.html" class="boxSm skyblue">Latitude</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box"></div>
+                </div>
+                <div class="dropdown col-md-2">
+                    <button class="dropbtn">Dashboards</button>
+                        <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> <!-- Display/Label Here without brackets -->
+                    <div class="dropdown-content">
+                        <a href="Viz01_TemperatureVsLatitude.html">Temp vs. Latitude</a>
+                        <a href="Viz02_HumidityVsLatitude.html">Humidity vs. Latitude</a>
+                        <a href="Viz03_CloudinessVsLatitude.html">Cloudiness vs. Latitude</a>
+                        <a href="Viz04_WindSpeedVsLatitude.html">Wind vs. Latitude</a>
+                    </div>
+                <!-- </nav> -->
+            </div>
+            <div class="col-md-2">
+                <div class="box white centerTextAlignment"><!-- Comparissons -->
+                    <a href="Viz05_Comparisons.html" class=hyperkinkNoEffect>Comparison</a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box white centerTextAlignment"><!-- Data -->
+                    <a href="Viz06_Data.html" class=hyperkinkNoEffect>Data</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End Navbar -->
+
+    <!-- Empty Row -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 largeBox">
+                <h1 class="pageHeaders">Humidity vs. Latitude</h1>
+                <hr class="hrLeft">
+                <section class="smImage">
+                    <img src="Resources/assets/images/HumidityVsLatitude.png" alt="HumidityVsLatitude" height= 175px> 
+                </section>
+                <p> This graph clearly shows that temperatures were higher between -40 and 20
+                    degrees north.  Because data was collected at the beginning of December, still
+                    during fall, the story here is that temperatures in December drop at higher
+                    latitudes, because the northern hemisphere is transitioning into winter.
+                    The graph also shows higher temperatures in lower altitudes, because the 
+                    southern hemisphere is transitioning into summer.
+                    </p>
+                <p> This analysis is set to confirm or debunk this old belief as 
+                    well as to provide facts around what truly happens to the 
+                    weather as we approach the equator.  The winds and oceans
+                    distrbute the heat more evenly.
+                    </p>                    
+            </div>
+            <div class="col-md-1">
+                <div class="box"></div>
+            </div>
+            <div class="col-md-4 sideBox">
+                <h1 class="pageHeaders centerTextAlignment">Visualizations</h1>
+                <hr class="hrRight">
+                <section class="position1">
+                    <a href="Viz01_TemperatureVsLatitude.html" title=""><img src="Resources/assets/images/TemperatureVsLatitude.png" alt="TemperatureVsLatitude" height=120px"></a>
+                </section>
+                <section class="position2">
+                    <a href="Viz02_HumidityVsLatitude.html" title=""><img src="Resources/assets/images/HumidityVsLatitude.png" alt="HumidityVsLatitude" height=120px></a>
+                </section>
+                <section class="position3">
+                    <a href="Viz03_CloudinessVsLatitude.html" title=""><img src="Resources/assets/images/CloudinessVsLatitude.png" alt="CloudinessVsLatitude" height=120px></a>
+                </section>
+                <section class=position4>
+                    <a href="Viz04_WindSpeedVsLatitude.html" title=""><img src="Resources/assets/images/WindspeedVsLatitude.png" alt="CloudinessVsLatitude" height=120px></a>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

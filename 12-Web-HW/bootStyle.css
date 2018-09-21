@@ -1,0 +1,276 @@
+/* V 2.0 */
+/* .navbarx {
+    overflow: hidden;
+    background-color: #ffffff;
+    font-family: Arial;
+    height: 57px;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-left: 0%;
+    display: inline;
+  } */
+
+.box {
+    height: 100%;
+    padding: 0px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+}
+
+.navRow {
+    background-color: white;
+    width: 100%;
+    display: block;
+    position: relative;
+    left: 0%;
+    right: 0%;
+    /* overflow: hidden; */
+}
+
+.boxSm {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin: auto;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    /* display: inline; */
+}
+.skyblue {
+    background: #40adb1;
+}
+
+.purple {
+    background: rebeccapurple;
+}
+
+.red {
+    background: indianred;
+}
+
+.white {
+    background: white;
+    color: black;
+}
+
+.centerTextAlignment {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.pageHeaders {
+    color: #40adb1;
+    line-height: 50px;
+    height: 50px;
+}
+
+h2 {
+    color: #40adb1;
+    font-size: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.bodyBackground {
+    background-color:#817e7ee0)
+}
+
+body {
+    background-color:#d6d2d2fa
+}
+
+.hyperkinkNoEffect {
+    color:inherit
+}
+
+.bulletList {
+    list-style-type: circle
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color:white;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 800;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #40adb1;
+}
+
+.thumbnailBorder {
+    border: none
+}
+
+/* Main Box on left side */
+.boxLeft {
+    width: 700px;
+    height: 400px;
+    background: #ffffff;
+    position: absolute;
+    top: 22%;
+    left: 3%;
+  
+  }
+
+.smImage {
+    display: inline;
+    max-height: 200px;
+    width: auto;
+    height: auto; 
+    float: left;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    }
+.largeBox {
+    size: 95%;
+    background: white;
+}
+/* .sideBox {
+    background: white;
+    width: 355px;
+    height: 450px;
+    display: inline;
+} */
+.position1 {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    float: left;
+}
+
+.position2 {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    float: right;
+}
+.position3 {
+    position: absolute;
+    top: 275%;
+    left: 0%;
+    float: left;
+}
+.position4 {
+    position: absolute;
+    top: 275%;
+    right: 5%;
+    float: right;
+}
+
+.hrLeft { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1.5px;
+    color: #8d9091;
+}
+
+.hrRight { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    margin-left: -1em;
+    margin-right: 0.5em;
+    border-style: line;
+    border-width: 2.5px;
+    color: #f9f9f9;
+}
+
+.tableBackground {
+    background: none;
+}
+
+.pSmall {
+    font-size: 8px;
+}
+
+/*************************Responsive Design*******************/
+/* @media (max-width: 480px) {                                                                                                                                                                                                                                                                                                     ;///////////////////////////////////////'------------------------=.////'}
+    * .pageHeaders {
+        color: #40adb1;
+        font-size: 12px;
+        line-height: 25px;
+        height: 25px;
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+
+    .dropbtn {
+        font-size: 10px;
+    }
+
+    .centerTextAlignment {
+        font-size: 10px;
+    }
+} */
+
+@media (max-width: 480px) {
+    * .pageHeaders {
+        color: #40adb1;
+        font-size: 12px;
+        line-height: 25px;
+        height: 25px;
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+
+    .dropbtn {
+        font-size: 10px;
+    }
+
+    .centerTextAlignment {
+        font-size: 10px;
+    }
+  }
+  
+  .medStyle

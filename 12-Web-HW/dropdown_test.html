@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- CSS Stylesheets with Relative Paths -->
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="dropdown_css.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  <div class="navbar">
+    <h1 class='navbox1'>Latitude</h1>
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div> 
+  </div>
+
+  <!-- Build the left main container -->
+  <div class = "container">
+    <div class = "row">
+      <div class = "col-md-8 text-center">
+        <div class = "box_left">
+            <p class = "text-center" >Test out the text</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

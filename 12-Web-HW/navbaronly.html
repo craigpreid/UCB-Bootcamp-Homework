@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- CSS Stylesheets with Relative Paths -->
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" /> -->
+  <link rel="stylesheet" type="text/css" href="navbaronly.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="topnavL" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+    </div>
+    <div class="topnav" id="myTopnav">
+    <a href="#news">Data</a>
+    <a href="#contact">Comparison</a>
+    <div class="dropdown">
+        <button class="dropbtn">Dashboard
+        <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        </div>
+    </div> 
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    

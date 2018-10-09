@@ -65,7 +65,7 @@ function renderXAxis(newXScale, xAxis) {
 }
 
 function renderYAxis (newYScale, yAxis) {
-  var leftAxis = d3.axisBottom(newYScale);
+  var leftAxis = d3.axisLeft(newYScale);
 
   yAxis.transition()
     .duration(1000)
@@ -152,7 +152,7 @@ d3.csv("data.csv", function(err, healthData) {
     .call(bottomAxis);
 
   // append y axis
-  chartGroup.append("g")
+  var yAxis = chartGroup.append("g")
     .classed("y-axis", true)
     .call(leftAxis);
 

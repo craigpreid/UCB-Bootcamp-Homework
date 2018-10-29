@@ -12,6 +12,9 @@
   height: 25px;
 }
 
+.panel-heading{
+  background: #4b5866;
+}
 /* ********************** */
 
 
@@ -106,25 +109,36 @@ select {
 /* The styles for the parallax */
 .hero {
   position: relative;
-  height: 550px;
+  height: 450px;
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/nasa.jpg");
+  background-image: url("https://media.giphy.com/media/l2QZXpPQJnW3IvbyM/giphy.gif");
   background-attachment: fixed;
   background-position: bottom center;
-  background-size: cover;
+  background-size: 300px ;
 }
 
 .hero h1 {
-  margin-top: 200px;
-  font-size: 1rem;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding: 20px;
+  text-align: center;
+  background: black;
+  font-size: 0.1rem;
   animation: title 1.2s forwards linear;
-  
+
 }
 
 .hero p {
-  font-size: 2rem;
+  margin-top: -11px;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding: 20px;
+  text-align: center;
+  background: rgb(71, 70, 70);  font-size: 2rem;
+  text-align: center;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
@@ -162,6 +176,20 @@ select {
   #table-area thead {
     display: none;
   }
+
+  .hero h1 {
+    font-size: 25px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .hero p {
+    font-size: 15px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+
 
   #table-area tr td:first-child {
     font-size: 1.8em;
